@@ -24,7 +24,7 @@ class ListHighSchoolViewController: UITableViewController , PresentHighSchool{
     
     
     var  listHighSchoolViewModel : ListHighSchoolViewModel!
-    var  highSchoolDetails : DetailsViewModel!
+    var  highSchoolDetails : DetailsViewModel?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,7 +35,7 @@ class ListHighSchoolViewController: UITableViewController , PresentHighSchool{
     
     
     private func setup(){
-        navigationController?.navigationBar.prefersLargeTitles = true
+       
         listHighSchoolViewModel.fetchHighScollList()
         
         
@@ -71,18 +71,22 @@ class ListHighSchoolViewController: UITableViewController , PresentHighSchool{
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let dtnHighSchool = listHighSchoolViewModel.listHighSchool[indexPath.row].dbn
-        if dtnHighSchool == nil {
-            print("not found")
-        } else { print(dtnHighSchool)}
         
-        let detailsVC = DetailsViewController()
-        let navControll = UINavigationController(rootViewController: detailsVC)
-        present(navControll, animated: true) {
-            
-        }
+        let detailsVC = storyboard?.instantiateViewController(identifier: "DetailsViewController") as? DetailsViewController
+        detailsVC?.dbn2 = dtnHighSchool
+      
         
-       
+        navigationController?.pushViewController(detailsVC!, animated: true)
+        
+        
+        
+        
+        
     }
+    
+    
+    
+    
     
     
 }

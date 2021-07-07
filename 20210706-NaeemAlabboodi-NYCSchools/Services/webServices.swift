@@ -45,6 +45,8 @@ class Webservice{
                 let listHishschool =   try? decoder.decode([DetailsHighSchoolModel].self, from: data)
                 
                 if listHishschool != nil {
+                    
+                   
                     completion(listHishschool)
                 }
                 
