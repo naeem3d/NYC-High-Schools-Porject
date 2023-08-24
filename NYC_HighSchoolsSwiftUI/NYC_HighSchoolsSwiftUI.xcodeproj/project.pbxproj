@@ -8,17 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		23A640242A97A4AA003E6679 /* NYC_HighSchoolsSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A640232A97A4AA003E6679 /* NYC_HighSchoolsSwiftUIApp.swift */; };
-		23A640262A97A4AA003E6679 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A640252A97A4AA003E6679 /* ContentView.swift */; };
 		23A640282A97A4B0003E6679 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23A640272A97A4B0003E6679 /* Assets.xcassets */; };
 		23A6402B2A97A4B0003E6679 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23A6402A2A97A4B0003E6679 /* Preview Assets.xcassets */; };
+		23A640392A97A4C8003E6679 /* SchoolModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A640322A97A4C8003E6679 /* SchoolModel.swift */; };
+		23A6403A2A97A4C8003E6679 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A640342A97A4C8003E6679 /* Service.swift */; };
+		23A6403B2A97A4C8003E6679 /* SchoolListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A640362A97A4C8003E6679 /* SchoolListView.swift */; };
+		23A6403C2A97A4C8003E6679 /* SchoolsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A640382A97A4C8003E6679 /* SchoolsViewModel.swift */; };
+		23A6403E2A97AD33003E6679 /* SchoolDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A6403D2A97AD33003E6679 /* SchoolDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		23A640202A97A4AA003E6679 /* NYC_HighSchoolsSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NYC_HighSchoolsSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23A640232A97A4AA003E6679 /* NYC_HighSchoolsSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NYC_HighSchoolsSwiftUIApp.swift; sourceTree = "<group>"; };
-		23A640252A97A4AA003E6679 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		23A640272A97A4B0003E6679 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		23A6402A2A97A4B0003E6679 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		23A640322A97A4C8003E6679 /* SchoolModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchoolModel.swift; sourceTree = "<group>"; };
+		23A640342A97A4C8003E6679 /* Service.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		23A640362A97A4C8003E6679 /* SchoolListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchoolListView.swift; sourceTree = "<group>"; };
+		23A640382A97A4C8003E6679 /* SchoolsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchoolsViewModel.swift; sourceTree = "<group>"; };
+		23A6403D2A97AD33003E6679 /* SchoolDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +60,10 @@
 			isa = PBXGroup;
 			children = (
 				23A640232A97A4AA003E6679 /* NYC_HighSchoolsSwiftUIApp.swift */,
-				23A640252A97A4AA003E6679 /* ContentView.swift */,
+				23A640312A97A4C8003E6679 /* Model */,
+				23A640332A97A4C8003E6679 /* Service */,
+				23A640352A97A4C8003E6679 /* View */,
+				23A640372A97A4C8003E6679 /* ViewModel */,
 				23A640272A97A4B0003E6679 /* Assets.xcassets */,
 				23A640292A97A4B0003E6679 /* Preview Content */,
 			);
@@ -65,6 +76,43 @@
 				23A6402A2A97A4B0003E6679 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		23A640312A97A4C8003E6679 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				23A640322A97A4C8003E6679 /* SchoolModel.swift */,
+			);
+			name = Model;
+			path = ../../NYC_HighSchools/NYC_HighSchools/Model;
+			sourceTree = "<group>";
+		};
+		23A640332A97A4C8003E6679 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				23A640342A97A4C8003E6679 /* Service.swift */,
+			);
+			name = Service;
+			path = ../../NYC_HighSchools/NYC_HighSchools/Service;
+			sourceTree = "<group>";
+		};
+		23A640352A97A4C8003E6679 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				23A640362A97A4C8003E6679 /* SchoolListView.swift */,
+				23A6403D2A97AD33003E6679 /* SchoolDetailView.swift */,
+			);
+			name = View;
+			path = ../../NYC_HighSchools/NYC_HighSchools/View;
+			sourceTree = "<group>";
+		};
+		23A640372A97A4C8003E6679 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				23A640382A97A4C8003E6679 /* SchoolsViewModel.swift */,
+			);
+			name = ViewModel;
+			path = ../../NYC_HighSchools/NYC_HighSchools/ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +185,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23A640262A97A4AA003E6679 /* ContentView.swift in Sources */,
+				23A6403C2A97A4C8003E6679 /* SchoolsViewModel.swift in Sources */,
+				23A6403B2A97A4C8003E6679 /* SchoolListView.swift in Sources */,
+				23A6403A2A97A4C8003E6679 /* Service.swift in Sources */,
+				23A640392A97A4C8003E6679 /* SchoolModel.swift in Sources */,
 				23A640242A97A4AA003E6679 /* NYC_HighSchoolsSwiftUIApp.swift in Sources */,
+				23A6403E2A97AD33003E6679 /* SchoolDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

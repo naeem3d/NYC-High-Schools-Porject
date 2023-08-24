@@ -11,7 +11,7 @@ import SwiftUI
 struct NYC_HighSchoolsSwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SchoolListView()
         }
     }
 }
