@@ -10,11 +10,26 @@
 import SwiftUI
 
 struct SchoolListView: View {
+    @ObservedObject var viewModel = SchoolsViewModel()
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            List(viewModel.schools) { school in
+                NavigationLink(destination: SchoolDetailView(school: school)) {
+                    Text(school.schoolName ?? "unknown")
+                        .foregroundStyle(Color.blue)
+                }
+            }
+            .navigationTitle("NYC-High School List")
+        } .onAppear {
+            viewModel.fetchSchools()
+        }
     }
 }
 
-#Preview {
-    SchoolListView()
+
+struct SchoolListView_Previews: PreviewProvider {
+    static var previews: some View {
+        SchoolListView()
+    }
 }
