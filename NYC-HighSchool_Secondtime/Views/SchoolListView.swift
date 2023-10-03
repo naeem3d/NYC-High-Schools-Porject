@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+//test
 struct SchoolListView: View {
     @ObservedObject var viewModel = SchoolsViewModel()
     
