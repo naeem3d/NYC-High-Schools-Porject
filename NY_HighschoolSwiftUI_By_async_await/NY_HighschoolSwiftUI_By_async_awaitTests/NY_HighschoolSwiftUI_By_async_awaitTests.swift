@@ -7,7 +7,7 @@
 
 import XCTest
 @testable import NY_HighschoolSwiftUI_By_async_await
-
+//add test
 final class NY_HighschoolSwiftUI_By_async_awaitTests: XCTestCase {
     var viewModel: HighSchoolViewModel!
     override func setUpWithError() throws {
