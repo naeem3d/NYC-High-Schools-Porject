@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		047019C0269699C000143BA4 /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047019BF269699C000143BA4 /* EndPoints.swift */; };
+		047019C826969FED00143BA4 /* _0210706_NaeemAlabboodi_NYCSchoolsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047019C726969FED00143BA4 /* _0210706_NaeemAlabboodi_NYCSchoolsTests.swift */; };
+		047019D02696A1F300143BA4 /* MockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047019CF2696A1F300143BA4 /* MockService.swift */; };
+		047019D22696A2E900143BA4 /* response.json in Resources */ = {isa = PBXBuildFile; fileRef = 047019D12696A2E900143BA4 /* response.json */; };
 		23B3AE202694B7F200EB9EAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B3AE1F2694B7F200EB9EAB /* AppDelegate.swift */; };
 		23B3AE222694B7F200EB9EAB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B3AE212694B7F200EB9EAB /* SceneDelegate.swift */; };
 		23B3AE272694B7F200EB9EAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23B3AE252694B7F200EB9EAB /* Main.storyboard */; };
@@ -22,7 +26,23 @@
 		23B3AE4A2695645B00EB9EAB /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B3AE492695645B00EB9EAB /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		047019CA26969FED00143BA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 23B3AE142694B7F200EB9EAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 23B3AE1B2694B7F200EB9EAB;
+			remoteInfo = "20210706-NaeemAlabboodi-NYCSchools";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		047019BF269699C000143BA4 /* EndPoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
+		047019C526969FED00143BA4 /* 20210706-NaeemAlabboodi-NYCSchoolsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "20210706-NaeemAlabboodi-NYCSchoolsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		047019C726969FED00143BA4 /* _0210706_NaeemAlabboodi_NYCSchoolsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _0210706_NaeemAlabboodi_NYCSchoolsTests.swift; sourceTree = "<group>"; };
+		047019C926969FED00143BA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		047019CF2696A1F300143BA4 /* MockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockService.swift; sourceTree = "<group>"; };
+		047019D12696A2E900143BA4 /* response.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = response.json; sourceTree = "<group>"; };
 		23B3AE1C2694B7F200EB9EAB /* 20210706-NaeemAlabboodi-NYCSchools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "20210706-NaeemAlabboodi-NYCSchools.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		23B3AE1F2694B7F200EB9EAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23B3AE212694B7F200EB9EAB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +61,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		047019C226969FED00143BA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		23B3AE192694B7F200EB9EAB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -51,10 +78,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		047019BD269695EA00143BA4 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				23B3AE2A2694B7F300EB9EAB /* LaunchScreen.storyboard */,
+				23B3AE252694B7F200EB9EAB /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		047019BE269699AB00143BA4 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				047019BF269699C000143BA4 /* EndPoints.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		047019C626969FED00143BA4 /* 20230706-NaeemAlabboodi-NYCSchoolsTests */ = {
+			isa = PBXGroup;
+			children = (
+				047019C726969FED00143BA4 /* _0210706_NaeemAlabboodi_NYCSchoolsTests.swift */,
+				047019C926969FED00143BA4 /* Info.plist */,
+				047019CF2696A1F300143BA4 /* MockService.swift */,
+				047019D12696A2E900143BA4 /* response.json */,
+			);
+			path = "20230706-NaeemAlabboodi-NYCSchoolsTests";
+			sourceTree = "<group>";
+		};
 		23B3AE132694B7F200EB9EAB = {
 			isa = PBXGroup;
 			children = (
 				23B3AE1E2694B7F200EB9EAB /* 20210706-NaeemAlabboodi-NYCSchools */,
+				047019C626969FED00143BA4 /* 20230706-NaeemAlabboodi-NYCSchoolsTests */,
 				23B3AE1D2694B7F200EB9EAB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,6 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				23B3AE1C2694B7F200EB9EAB /* 20210706-NaeemAlabboodi-NYCSchools.app */,
+				047019C526969FED00143BA4 /* 20210706-NaeemAlabboodi-NYCSchoolsTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,16 +127,14 @@
 		23B3AE1E2694B7F200EB9EAB /* 20210706-NaeemAlabboodi-NYCSchools */ = {
 			isa = PBXGroup;
 			children = (
-				23B3AE412694F1E700EB9EAB /* Cell */,
+				047019BE269699AB00143BA4 /* Utility */,
 				23B3AE3E2694E7A500EB9EAB /* ViewModels */,
 				23B3AE3B2694C1F100EB9EAB /* Model */,
 				23B3AE382694C14700EB9EAB /* Services */,
-				23B3AE332694B8EF00EB9EAB /* Controllers */,
+				23B3AE4626953D1B00EB9EAB /* View */,
 				23B3AE1F2694B7F200EB9EAB /* AppDelegate.swift */,
 				23B3AE212694B7F200EB9EAB /* SceneDelegate.swift */,
-				23B3AE4626953D1B00EB9EAB /* View */,
 				23B3AE282694B7F300EB9EAB /* Assets.xcassets */,
-				23B3AE2A2694B7F300EB9EAB /* LaunchScreen.storyboard */,
 				23B3AE2D2694B7F300EB9EAB /* Info.plist */,
 			);
 			path = "20210706-NaeemAlabboodi-NYCSchools";
@@ -131,7 +186,9 @@
 		23B3AE4626953D1B00EB9EAB /* View */ = {
 			isa = PBXGroup;
 			children = (
-				23B3AE252694B7F200EB9EAB /* Main.storyboard */,
+				047019BD269695EA00143BA4 /* Storyboards */,
+				23B3AE332694B8EF00EB9EAB /* Controllers */,
+				23B3AE412694F1E700EB9EAB /* Cell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -139,6 +196,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		047019C426969FED00143BA4 /* 20210706-NaeemAlabboodi-NYCSchoolsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 047019CC26969FED00143BA4 /* Build configuration list for PBXNativeTarget "20210706-NaeemAlabboodi-NYCSchoolsTests" */;
+			buildPhases = (
+				047019C126969FED00143BA4 /* Sources */,
+				047019C226969FED00143BA4 /* Frameworks */,
+				047019C326969FED00143BA4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				047019CB26969FED00143BA4 /* PBXTargetDependency */,
+			);
+			name = "20210706-NaeemAlabboodi-NYCSchoolsTests";
+			productName = "20210706-NaeemAlabboodi-NYCSchoolsTests";
+			productReference = 047019C526969FED00143BA4 /* 20210706-NaeemAlabboodi-NYCSchoolsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		23B3AE1B2694B7F200EB9EAB /* 20210706-NaeemAlabboodi-NYCSchools */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 23B3AE302694B7F300EB9EAB /* Build configuration list for PBXNativeTarget "20210706-NaeemAlabboodi-NYCSchools" */;
@@ -165,12 +240,16 @@
 				LastSwiftUpdateCheck = 1250;
 				LastUpgradeCheck = 1250;
 				TargetAttributes = {
+					047019C426969FED00143BA4 = {
+						CreatedOnToolsVersion = 12.5;
+						TestTargetID = 23B3AE1B2694B7F200EB9EAB;
+					};
 					23B3AE1B2694B7F200EB9EAB = {
 						CreatedOnToolsVersion = 12.5.1;
 					};
 				};
 			};
-			buildConfigurationList = 23B3AE172694B7F200EB9EAB /* Build configuration list for PBXProject "20210706-NaeemAlabboodi-NYCSchools" */;
+			buildConfigurationList = 23B3AE172694B7F200EB9EAB /* Build configuration list for PBXProject "20230706-NaeemAlabboodi-NYCSchools" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -184,11 +263,20 @@
 			projectRoot = "";
 			targets = (
 				23B3AE1B2694B7F200EB9EAB /* 20210706-NaeemAlabboodi-NYCSchools */,
+				047019C426969FED00143BA4 /* 20210706-NaeemAlabboodi-NYCSchoolsTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		047019C326969FED00143BA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				047019D22696A2E900143BA4 /* response.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		23B3AE1A2694B7F200EB9EAB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -202,6 +290,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		047019C126969FED00143BA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				047019C826969FED00143BA4 /* _0210706_NaeemAlabboodi_NYCSchoolsTests.swift in Sources */,
+				047019D02696A1F300143BA4 /* MockService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		23B3AE182694B7F200EB9EAB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -216,10 +313,19 @@
 				23B3AE222694B7F200EB9EAB /* SceneDelegate.swift in Sources */,
 				23B3AE4826955F9800EB9EAB /* DetailsViewModel.swift in Sources */,
 				23B3AE4A2695645B00EB9EAB /* DetailsViewController.swift in Sources */,
+				047019C0269699C000143BA4 /* EndPoints.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		047019CB26969FED00143BA4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 23B3AE1B2694B7F200EB9EAB /* 20210706-NaeemAlabboodi-NYCSchools */;
+			targetProxy = 047019CA26969FED00143BA4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		23B3AE252694B7F200EB9EAB /* Main.storyboard */ = {
@@ -241,6 +347,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		047019CD26969FED00143BA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "20210706-NaeemAlabboodi-NYCSchoolsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dev.mac.-0210706-NaeemAlabboodi-NYCSchoolsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/20210706-NaeemAlabboodi-NYCSchools.app/20210706-NaeemAlabboodi-NYCSchools";
+			};
+			name = Debug;
+		};
+		047019CE26969FED00143BA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "20210706-NaeemAlabboodi-NYCSchoolsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.dev.mac.-0210706-NaeemAlabboodi-NYCSchoolsTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/20210706-NaeemAlabboodi-NYCSchools.app/20210706-NaeemAlabboodi-NYCSchools";
+			};
+			name = Release;
+		};
 		23B3AE2E2694B7F300EB9EAB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -364,6 +508,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F788WA65H3;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
 				INFOPLIST_FILE = "20210706-NaeemAlabboodi-NYCSchools/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -383,6 +529,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F788WA65H3;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_TESTING_SEARCH_PATHS = YES;
 				INFOPLIST_FILE = "20210706-NaeemAlabboodi-NYCSchools/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -398,7 +546,16 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		23B3AE172694B7F200EB9EAB /* Build configuration list for PBXProject "20210706-NaeemAlabboodi-NYCSchools" */ = {
+		047019CC26969FED00143BA4 /* Build configuration list for PBXNativeTarget "20210706-NaeemAlabboodi-NYCSchoolsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				047019CD26969FED00143BA4 /* Debug */,
+				047019CE26969FED00143BA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		23B3AE172694B7F200EB9EAB /* Build configuration list for PBXProject "20230706-NaeemAlabboodi-NYCSchools" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				23B3AE2E2694B7F300EB9EAB /* Debug */,
